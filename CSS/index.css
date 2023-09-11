@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' ,sans-serif;
+}
+body{
+  background: #223243;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    /* min-height: 100vh; */
+}
+
+.containerz{
+  width: 70%;
+  padding: 40px;
+  border-radius: 20px;
+  border: 8px solid #223243;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+.containerc {
+  width: 400px;
+}
+.containerz .form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 25px;
+}
+.container h2{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 5px;
+}
+.containerz .form .inputBox{
+  position: relative;
+  width: 300px;
+}
+.containerz .form .inputBox input{
+  padding: 12px 10px 12px 48px;
+  border: none;
+  width: 100%;
+  background: #223243;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-weight: 300;
+  border-radius: 25px;
+  font-size: 1em;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
+  transition: 0.5s;
+  outline: none;
+}
+.containerz .form .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 12px 10px 12px 48px;
+  pointer-events: none;
+  font-size: 1em;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.containerz .form .inputBox input:valid ~ span,
+.containerz .form .inputBox input:focus ~ span
+{
+color: #00dfc4;
+border: 1px solid #00dfc4;
+background: #223243;
+transform: translateX(25px) translateY(-7px);
+font-size: 0.6em;
+padding: 0 8px;
+border-radius: 10px;
+letter-spacing: 0.1em;
+}
+.containerz .form .inputBox input:valid,
+.containerz .form .inputBox input:focus {
+border: 1px solid #00dfc4;
+}
+.containerz .form .inputBox i{
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 25px;
+  padding: 2px 0;
+  padding-right: 8px;
+  color: #00dfc4;
+  border-right: 1px solid #00dfc4;
+}
+.containerz .form .inputBox input[type="submit"]{
+  background: #00dfc4;
+  color: #223243;
+  padding: 10px 0;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+.containerz .form p{
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+.containerz .form p a{
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+.header{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.container img{
+  width: 100px;
+  position: relative;
+  /* left: -35%; */
+  border: 4px solid #Fff;
+}
+@media (max-width:1029px) {
+  .containerz{
+    width: 90%;
+  } 
+    .containerc {
+      width: 400px;
+    }
+}
+@media (max-width:850px) {
+  .containerz {
+    width: 98%;
+  }
+    .containerc {
+      width: 400px;
+    }
+}
+@media (max-width:642px) {
+  .containerc {
+    width: 98%;
+  }
+    .container img {
+  left: 0;
+    }
+}
